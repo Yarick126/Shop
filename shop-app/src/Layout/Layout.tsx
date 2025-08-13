@@ -1,0 +1,20 @@
+import type { ReactElement, ReactNode } from "react";
+import { NavLink } from "react-router";
+
+const Layout = ({children}: {children: ReactNode}): ReactElement => {
+  return (
+    <>
+      <header>
+        <nav className="bg-sky-300 p-4 flex flex-row flex-nowrap text-2xl text-rose-500 tracking-wide">
+          <NavLink to='/' className="grow-5 text-center hover:text-white">Home</NavLink>
+          <NavLink to='/registration' className="grow-5 text-center hover:text-white">Registration</NavLink>
+        </nav>
+      </header>
+      <main className="bg-black text-white p-7">
+        {children}
+      </main>
+    </>
+  );
+};
+
+export default Layout;
