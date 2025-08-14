@@ -1,0 +1,23 @@
+{
+  "name": "shop-app-backend",
+  "version": "1.0.0",
+  "description": "backend for shop-app(just for being)",
+  "keywords": [
+    "backend",
+    "shop",
+    "app"
+  ],
+  "license": "ISC",
+  "author": "Yaroslav",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.14.0",
+    "env": "^0.0.2",
+    "express": "^5.1.0",
+    "prisma": "^6.14.0"
+  }
+}
